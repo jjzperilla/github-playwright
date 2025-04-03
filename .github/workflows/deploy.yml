@@ -33,8 +33,3 @@ jobs:
 
     - name: Verify server is running
       run: curl http://localhost:8080/api/health
-
-    - name: Push to Heroku (or other platform)
-      run: |
-        git remote add heroku https://git.heroku.com/your-app.git  # Replace with your Heroku app URL
-        git push heroku main
